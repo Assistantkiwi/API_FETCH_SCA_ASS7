@@ -10,16 +10,19 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="search">
-        <input type="text" id="search-box" value="laugh" />
-        <button id="search-btn">Search</button>
+    <main>
+      <div class="container">
+        <div class="search">
+          <input type="text" id="search-box" value="laugh" />
+          <button id="search-btn">Search</button>
+        </div>
+        <button onclick="displayEmoji()">Display Emoji</button>
+        <div class="display" id="gif-div"></div>
       </div>
-      <div class="display"></div>
-    </div>
-    <!--API key generated-->
-    <script src="api_key.js"></script>
-    <!--JS file-->
-    <script src="script.js"></script>
+      <!--API key generated-->
+      <!-- <script src="api_key.js"></script> -->
+      <!--JS file-->
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>
