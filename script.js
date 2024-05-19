@@ -1,10 +1,15 @@
 let apiKey = "Df3czzOiBVrW8s1LnML7HQ49SnZnPKLg";
 const displayDiv = document.getElementById("gif-div");
-
 const displayGif = async () => {
+  let userInput = document.getElementById("search-box").value.trim();
+  document.getElementById("search-box").value = "";
+  if (userInput === "") {
+    return;
+  }
+  displayDiv.innerHTML = "";
   try {
     const response = await fetch(
-      `https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=${apiKey}&limit=25`
+      `http://api.giphy.com/v1/gifs/search?q=${userInput}&api_key=${apiKey}&limit=25`
     );
     const data = await response.json();
     data.data.map((item) => {
@@ -13,7 +18,6 @@ const displayGif = async () => {
       img.height = item.images.downsized_medium.height;
       img.width = item.images.downsized_medium.width;
       img.alt = "gif";
-
       displayDiv.appendChild(img);
     });
     console.log(data);
