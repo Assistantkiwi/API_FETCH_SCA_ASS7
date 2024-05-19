@@ -9,7 +9,7 @@ const displayGif = async () => {
   displayDiv.innerHTML = "";
   try {
     const response = await fetch(
-      `http://api.giphy.com/v1/gifs/search?q=${userInput}&api_key=${apiKey}&limit=25`
+      `https://api.giphy.com/v1/gifs/search?q=${userInput}&api_key=${apiKey}&limit=25`
     );
 
     const data = await response.json();
