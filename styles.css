@@ -55,3 +55,9 @@ body {
     padding: 20px;
     justify-content: center;
 }
+ .display img:hover{
+    border: 5px solid #fff;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    
+} 
