@@ -37,16 +37,6 @@ body {
     padding: 4px;
 }
 
-
-.bg-red-500 {
-    background-color: rgb(239 68 68);
-    background-origin: border-box;
-    text-decoration-color: #fff;
-    border-radius: 0.25rem;
-    margin: 8px;
-    padding: 4px;
-}
-
 .bg-lime-500 {
     background-color: rgb(132 204 22);
     background-origin: border-box;
@@ -58,4 +48,10 @@ body {
 
 .display {
     display: grid;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin-right: -20px;
+    margin-left: auto;
+    padding: 20px;
+    justify-content: center;
 }
