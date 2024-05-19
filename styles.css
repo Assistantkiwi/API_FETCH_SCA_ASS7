@@ -27,12 +27,10 @@ body {
 }
 
 .bg-white {
-    width: 600%;
-    height: 85%;
+    width: 320px;
+    height: 40px;
     margin: 8px;
     padding: 4px;
-    background-color: rgb(255 255 255);
-    color: rgb(51 65 85);
 }
 
 .bg-cyan-400 {
