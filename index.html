@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GIPHY Developers</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/4fcf497433.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4fcf497433.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
     <main>
       <div class="container">
         <div class="search">
-          <input type="text" id="search-box" value="laugh" title="search" class="bg-white" placeholder="Type here"/>
-          <button id="search-btn" class="bg-cyan-400 px-4 py-2 rounded text-white">Search</button>
+          <input
+            type="text"
+            id="search-box"
+            placeholder="Search a gif or emoji"
+            title="search"
+            class="bg-white"
+            placeholder="Type here"
+          />
         </div>
-        <button onclick="displayEmoji()" class="bg-red-500 px-4 py-2 rounded text-white">Emoji</button>
-        <button id="giphy-btn" class="bg-lime-500 px-4 py-2 rounded text-white">GIPHY</button>
-        <div class="display"></div>
+        <button
+          onclick="displayGif()"
+          id="giphy-btn"
+          class="bg-lime-500 px-4 py-2 rounded text-white"
+        >
+          GIPHY
+        </button>
+        <button
+          onclick="displayEmoji()"
+          class="bg-red-500 px-4 py-2 rounded text-white"
+        >
+          Emoji
+        </button>
+
+        <div class="display grid gap-4 grid-cols-3 grid-rows-3" id="gif-div"></div>
       </div>
       <script src="script.js"></script>
     </main>

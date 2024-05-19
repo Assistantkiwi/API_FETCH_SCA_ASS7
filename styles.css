@@ -27,21 +27,13 @@ body {
 }
 
 .bg-white {
+    background-color: rgb(255 255 255);
     width: 320px;
     height: 40px;
     margin: 8px;
     padding: 4px;
 }
 
-.bg-cyan-400 {
-    background: rgb(34 211 238);
-    color: #fff;
-    width: 6rem;
-    max-width: 540px;
-    margin: 8px;
-    padding: 4px;
-    border-radius: 10px;
-}
 
 .bg-red-500 {
     background-color: rgb(239 68 68);
@@ -59,4 +51,8 @@ body {
     border-radius: 0.25rem;
     margin: 8px;
     padding: 4px;
+}
+
+.display {
+    display: grid;
 }
