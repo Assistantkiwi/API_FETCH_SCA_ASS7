@@ -14,7 +14,7 @@
   <body>
     <main>
       <div class="container">
-        <div class="search">
+        <div class="search-container">
           <input
             type="text"
             id="search-box"
@@ -23,21 +23,25 @@
             class="bg-white"
             placeholder="Type here"
           />
+          <button
+            onclick="displayGif()"
+            id="giphy-btn"
+            class="bg-lime-500 px-4 py-2 rounded text-white"
+          >
+            GIPHY
+          </button>
+          <button
+            onclick="displayEmoji()"
+            class="bg-red-500 px-4 py-2 rounded text-white"
+          >
+            Emoji
+          </button>
         </div>
-        <button
-          onclick="displayGif()"
-          id="giphy-btn"
-          class="bg-lime-500 px-4 py-2 rounded text-white"
-        >
-          GIPHY
-        </button>
-        <button
-          onclick="displayEmoji()"
-          class="bg-red-500 px-4 py-2 rounded text-white"
-        >
-          Emoji
-        </button>
-        <div class="display grid gap-4 grid-cols-3 grid-rows-3" id="gif-div"></div>
+
+        <div
+          class="display grid gap-4 grid-cols-3 grid-rows-3 mt-4"
+          id="gif-div"
+        ></div>
         <div class="display" id="gif-div"></div>
       </div>
       <script src="script.js"></script>

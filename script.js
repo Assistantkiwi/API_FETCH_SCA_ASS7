@@ -22,16 +22,6 @@ const displayGif = async () => {
       displayDiv.appendChild(img);
     });
     console.log(data);
-
-    let gifsData = data;
-    gifsData.forEach((gif) => {
-
-      let container = document.createElement("gif-div");
-      container.classList.add("container");
-      console.log(gif);
-      document.querySelector(".displayGif").style.display = "grid";
-    });
-    document.querySelector(".displayGif").append(container);
   } catch (error) {
     console.log(error);
   }
